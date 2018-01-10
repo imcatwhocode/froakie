@@ -1,0 +1,5 @@
+# GPS
+KERNEL=="ttyAMA0", SUBSYSTEM=="tty", DRIVER=="", SYMLINK+="gps0", MODE="0666", TAG+="systemd"
+
+# PPS
+KERNEL=="pps0", SUBSYSTEM=="pps", DRIVER=="", SYMLINK+="gpspps0", MODE="0666"
